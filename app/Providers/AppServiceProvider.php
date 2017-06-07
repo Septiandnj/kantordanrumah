@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Facades\Shema;
+
 
 class AppServiceProvider extends ServiceProvider
 {
