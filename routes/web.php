@@ -18,3 +18,22 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+route::get('/testmodel', function(){
+	$q = App\Blog::all();
+	return $q;
+});
+
+route::get('/testmodel1', function(){
+	$a = App\produk::all();
+	return $a;
+});
+
+route::get('/testmodel2', function(){
+	$b = App\pengguna::all();
+	return $b;
+});
+
+route::get('/testmodel3', function(){
+	$c = App\pengaturan::all();
+	return $c;
+});
